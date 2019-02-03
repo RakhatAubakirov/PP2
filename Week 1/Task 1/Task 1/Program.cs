@@ -10,12 +10,12 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-             bool IsPrime(int x)
+            bool IsPrime(int x)
             {
                 bool ch = true;
                 if (x == 1)
                     ch = false;
-                for(int i = 2; i < x; i++)
+                for (int i = 2; i < x; i++)
                 {
                     if (x % i == 0)
                         ch = false;
@@ -26,8 +26,8 @@ namespace Task1
             string s = Console.ReadLine();
             string[] arr = s.Split();
             int cnt = 0;
-            
-            for(int i = 0; i < n; i++)
+
+            for (int i = 0; i < n; i++)
             {
                 int b = int.Parse(arr[i]);
                 if (IsPrime(b))
@@ -36,7 +36,7 @@ namespace Task1
                 }
             }
             Console.WriteLine(cnt);
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 int b = int.Parse(arr[i]);
                 if (IsPrime(b))
@@ -44,8 +44,9 @@ namespace Task1
                     Console.Write(b + " ");
                 }
 
-                    
+
             }
         }
     }
 }
+
