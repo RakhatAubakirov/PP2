@@ -11,11 +11,11 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            FileStream fs = new FileStream(@"D:\Desktop\PP2\Week 2\inf.txt" , FileMode.Open , FileAccess.Read);
-            StreamReader sr = new StreamReader(fs);
-            string s = sr.ReadLine();
-            char[] arr = s.ToCharArray();
-            Array.Reverse(arr);
+            FileStream fs = new FileStream(@"D:\Desktop\PP2\Week 2\inf.txt" , FileMode.Open , FileAccess.Read);//open a stream
+            StreamReader sr = new StreamReader(fs);//read from file
+            string s = sr.ReadLine();// read string
+            char[] arr = s.ToCharArray();//check string to all of chars;
+            Array.Reverse(arr);//reverse array
             string s1 = new string(arr);
             if (s == s1)
                 Console.WriteLine("Yes");

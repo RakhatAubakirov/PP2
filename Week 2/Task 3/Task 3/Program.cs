@@ -9,7 +9,7 @@ namespace Task_3
 {
     class Program
     {
-        static void Print(int lvl)
+        static void Print(int lvl)////shows how much space we need to show all directories and files by order
         {
             for (int i = 0; i < lvl; i++)
                 Console.Write(" ");
@@ -20,9 +20,9 @@ namespace Task_3
             FileInfo[] files = directory.GetFiles();
             DirectoryInfo[] directories = directory.GetDirectories();
 
-                foreach(FileInfo file in files)
+                foreach(FileInfo file in files)// show file's name if it is file
             {
-                Print(lvl);
+                Print(lvl);//call recursion to show the consistent of a folder
                 Console.WriteLine(file.FullName);
             }
                 foreach(DirectoryInfo dir in directories)

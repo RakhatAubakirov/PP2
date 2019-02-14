@@ -18,21 +18,21 @@ namespace Task_2
                     if (x % i == 0)
                         cnt++;
                 }
-                if (cnt == 2)
+                if (cnt == 2)//if number has only two dividers it is prime
                     return true;
                 return false;
             }
-            StreamReader sr = new StreamReader(@"D:\Desktop\PP2\Week 2\info.txt");
-            StreamWriter sw = new StreamWriter(@"D:\Desktop\PP2\Week 2\answer.txt");
-            string[] arr = sr.ReadLine().Split(' ');
+            StreamReader sr = new StreamReader(@"D:\Desktop\PP2\Week 2\info.txt");//read from filr
+            StreamWriter sw = new StreamWriter(@"D:\Desktop\PP2\Week 2\answer.txt");// write to new file
+            string[] arr = sr.ReadLine().Split(' ');// make array from our file
             for(int i = 0; i < arr.Length; i++)
             {
-                int x = int.Parse(arr[i]);
+                int x = int.Parse(arr[i]);//convert elements of array to int
                 if (IsPrime(x))
-                    sw.Write(x + " ");
+                    sw.Write(x + " ");//output to new file
 
             }
-            sr.Close();
+            sr.Close();//we always should close files;
             sw.Close();
 
            
