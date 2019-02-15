@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Task_2
 {
-    class Student
+    class Student//create new class student
     {
         public string name;
         public string id;
-        public int year = 1;
+        public int year = 1;//year by default is eaual to 1
         public Student(string name, string id)
         {
-            this.name = name;
-            this.id = id;
+            this.name = name;//access to name
+            this.id = id;//access to id
         }
-        public void print()
+        public void print()//function for printing
         {
-            year++;
+            year++;//increment year
 
-            Console.WriteLine(name + " " + id + " " + year);
+            Console.WriteLine(name + " " + id + " " + year);//print
         }
 
     }
@@ -29,8 +29,8 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
-            Student s = new Student("Rakhat", "18BD110360");
-            s.print();
+            Student s = new Student("Rakhat", "18BD110360");//create new  copy
+            s.print();//call function print
           
         }
     }
