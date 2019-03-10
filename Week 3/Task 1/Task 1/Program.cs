@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;   
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace Task1
         public string path;//variable for path
         public int sz;
         public bool ok;//for hidden files
-        DirectoryInfo directory = null;//firstly directory is empty
+        DirectoryInfo directory = null;//firstly directory is 
         FileSystemInfo currentfs = null;// same as directory
 
         public FarManager()
